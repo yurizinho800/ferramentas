@@ -1,6 +1,15 @@
 import subprocess
 import os
 
+from colorama import Fore, Style
+
+print(Fore.GREEN + "__            _ _")
+print("| _| __ _  ___(_) |")
+print("| |_ / _` |/ __| | |")
+print("|  _| (_| | (__| | |")
+print("|_|  \__,_|\___|_|_|" + Style.RESET_ALL)
+
+
 # Função para executar o script
 def executar_script(script):
     try:
