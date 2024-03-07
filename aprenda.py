@@ -25,7 +25,7 @@ def mostrar_menu():
     print("0 - Sair")
 
 # Lista com os nomes dos scripts
-scripts = ["Osint.py", "número-celular.py", "pesquisa.py"]
+scripts = ["Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py"]
 
 # Caminho para a pasta "test"
 pasta_test = "test"
