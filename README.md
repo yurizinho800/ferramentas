@@ -1,5 +1,5 @@
- # ferramentas com o intuito de ajudar a obter dados de forma rapida e segura
-![Screenshot_2024-02-27-19-13-33-173_com termux](https://github.com/yurizinho800/ferramentas/assets/157324630/0e75fea2-395a-47ce-b212-f759094b751c)
+ # ferramentas com o intuito de ajudar a obter dados de forma rapida e segura ![Screenshot_2024-03-07-15-25-10-084_com termux](https://github.com/yurizinho800/ferramentas/assets/157324630/bccb09eb-1596-43a6-96f6-57bd42442d6a)
+
 
  ----------------------------------------
             # comandos 
