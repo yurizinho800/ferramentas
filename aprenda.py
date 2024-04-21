@@ -3,8 +3,9 @@ import os
 
 from colorama import Fore, Style
 
-print(Fore.GREEN + "__            _ _")
-print("| _| __ _  ___(_) |")
+print(Fore.GREEN + ")")             
+print(" __            _  _ ")
+print("| _| __ _  ___(_)| |")
 print("| |_ / _` |/ __| | |")
 print("|  _| (_| | (__| | |")
 print("|_|  \__,_|\___|_|_|" + Style.RESET_ALL)
@@ -19,13 +20,13 @@ def executar_script(script):
 
 # Função para mostrar o menu de opções
 def mostrar_menu():
-    print("Escolha um dos scripts abaixo:")
+    print(Fore.GREEN + "Escolha um dos scripts abaixo:")
     for i, script in enumerate(scripts):
         print(f"{i + 1} - {script}")
     print("0 - Sair")
 
 # Lista com os nomes dos scripts
-scripts = ["Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py"]
+scripts = ["Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py"]
 
 # Caminho para a pasta "test"
 pasta_test = "test"
