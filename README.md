@@ -5,27 +5,24 @@
 
  ----------------------------------------
            **comandos:** 
-            '''bash
+           
 
-          apt update
+  apt update
 
+  apt upgrade 
 
-          apt upgrade 
-
-
-          pkg install python3 
+  pkg install python3 
 
 
-          pkg install git 
+  pkg install git 
 
 
-          git clone https://github.com/yurizinho800/ferramentas 
+ git clone
+https://github.com/yurizinho800/ferramentas 
 
+ cd ferramentas 
 
-          cd ferramentas 
-
-
-          pip install -r requirements.txt 
+ pip install -r requirements.txt 
 
 
 python3 aprenda.py
