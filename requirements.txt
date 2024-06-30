@@ -1,8 +1,4 @@
 phonenumbers
 colorama
-timezonefinder
 bs4
 requests
-colorama
-timezonefinder
-python-pip

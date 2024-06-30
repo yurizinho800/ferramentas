@@ -17,7 +17,7 @@ def obter_tecnologias(site_url):
             tecnologias = set()
 
             # Exemplos de tecnologias que você pode procurar
-            palavras_chave = ["cloud", "wordpress", "django", "react", "angular", "vue"]
+            palavras_chave = ["wholshostingthis", "buildwith", "wappalyzer", "cloud", "wordpress", "django", "react", "angular", "vue"]
 
             for palavra in palavras_chave:
                 if palavra in soup.text.lower():

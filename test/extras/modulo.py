@@ -36,7 +36,7 @@ def get_links(url):
     return []
 
 # Pedindo ao usuário que digite uma URL
-url = input("Digite uma URL com o https://... | ")
+url = input(Fore.BLUE + "Digite uma URL com o https://:..  ")
 
 # Chamando a função get_links para obter uma lista de links da URL digitada
 links = get_links(url)
@@ -48,3 +48,4 @@ print(Fore.YELLOW + get_domain(url))
 for link in links:
   # Imprimindo o domínio de cada link em amarelo
   print(Fore.YELLOW + get_domain(link))
+

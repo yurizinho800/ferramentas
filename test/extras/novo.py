@@ -79,11 +79,11 @@ def extracao_numeros(urls):
     return resultados
 
 # Peça ao usuário que digite as URLs que ele quer extrair os contatos, separadas por vírgula
-urls = input(Fore.GREEN + "Digite as URLs que você quer extrair os contatos, separadas por vírgula: ")
+urls = input(Fore.GREEN + "Digite as URLs que você quer extrair os contatos: ")
 # Converta a string de entrada em uma lista de URLs
 urls = urls.split(",")
 # Peça ao usuário que escolha qual opção ele quer
-opcao = input(Fore.LIGHTBLACK_EX + "Escolha uma opção: \n1 - Extrair e-mails \n2 - Extrair palavras \n3 - Extrair números \n")
+opcao = input(Fore.YELLOW + "Escolha uma opção: \n1 - Extrair e-mails \n2 - Extrair palavras \n3 - Extrair números \n" + Fore.RESET)
 # Chame a função do módulo de extração correspondente à opção escolhida e imprima o resultado para os sites
 if opcao == "1":
     print(extracao_emails(urls))

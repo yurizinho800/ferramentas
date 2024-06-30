@@ -1,12 +1,13 @@
 from colorama import init, Fore, Back, Style
 init()
-logo = """ ___
-|_ _|    |  _ \\
- | |_____| |_) |
- | |_____|  __/
-|___|    |_|"""
+logo = ("""
+░ ▄ ▀ 　▀ █ ▀ 　█ ▀ ▀ █ 　▀ █ ░ █ ▀ 　░ █ ▀ █ ░ 　▀ ▄ ░ 　
+█ ░ ░ 　▒ █ ░ 　█ ░ ░ █ 　░ █ ▄ █ ░ 　█ ▄ ▄ █ ▄ 　░ ░ █ 　
+░ ▀ ▄ 　▄ █ ▄ 　█ ▀ ▀ ▀ 　░ ░ ▀ ░ ░ 　░ ░ ░ █ ░ 　▄ ▀ ░ 　
+""")
+
 script = "qual é o site que você quer rastrear?"
-print(Back.LIGHTBLACK_EX + Fore.RED + logo + Fore.RESET + Back.RESET)
+print(Fore.RED + logo + Fore.RESET + Back.RESET)
 print(Fore.RED + script + Fore.RESET)
 
 # Removendo a interface de linha de comando usando o módulo argparse

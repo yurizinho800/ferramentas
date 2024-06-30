@@ -3,13 +3,31 @@ import os
 
 from colorama import Fore, Style
 
-print(Fore.GREEN + ")")             
-print(" __            _  _ ")
-print("| _| __ _  ___(_)| |")
-print("| |_ / _` |/ __| | |")
-print("|  _| (_| | (__| | |")
-print("|_|  \__,_|\___|_|_|" + Style.RESET_ALL)
-
+print(" ███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█")
+print("████▓▓▓▓╬╬▓█████╬╬╬╬╬╬███▓╬╬╬╬╬╬╬╬╬╬╬╬╬█")
+print("███▓▓▓▓╬╬╬╬╬╬▓██╬╬╬╬╬╬▓▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("████▓▓▓╬╬╬╬╬╬╬▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("███▓█▓███████▓▓███▓╬╬╬╬╬╬▓███████▓╬╬╬╬▓█")
+print("████████████████▓█▓╬╬╬╬╬▓▓▓▓▓▓▓▓╬╬╬╬╬╬╬█")
+print("███▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("████▓▓▓▓▓▓▓▓▓▓▓▓▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("███▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("█████▓▓▓▓▓▓▓▓█▓▓▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
+print("█████▓▓▓▓▓▓▓██▓▓▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██")
+print("█████▓▓▓▓▓████▓▓▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██")
+print("████▓█▓▓▓▓██▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██")
+print("████▓▓███▓▓▓▓▓▓▓██▓╬╬╬╬╬╬╬╬╬╬╬╬█▓╬▓╬╬▓██")
+print("█████▓███▓▓▓▓▓▓▓▓████▓▓╬╬╬╬╬╬╬█▓╬╬╬╬╬▓██")
+print("█████▓▓█▓███▓▓▓████╬▓█▓▓╬╬╬▓▓█▓╬╬╬╬╬╬███")
+print("██████▓██▓███████▓╬╬╬▓▓╬▓▓██▓╬╬╬╬╬╬╬▓███")
+print("███████▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓╬╬╬╬╬╬╬╬╬╬╬████")
+print("███████▓▓██▓▓▓▓▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓████")
+print("████████▓▓▓█████▓▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█████")
+print("█████████▓▓▓█▓▓▓▓▓███▓╬╬╬╬╬╬╬╬╬╬╬▓██████")
+print("██████████▓▓▓█▓▓▓▓▓██╬╬╬╬╬╬╬╬╬╬╬▓███████")
+print("███████████▓▓█▓▓▓▓███▓╬╬╬╬╬╬╬╬╬▓████████")
+print("██████████████▓▓▓███▓▓╬╬╬╬╬╬╬╬██████████")
+print("███████████████▓▓▓██▓▓╬╬╬╬╬╬▓███████████")
 
 # Função para executar o script
 def executar_script(script):
@@ -26,23 +44,12 @@ def mostrar_menu():
     print("0 - Sair")
 
 # Lista com os nomes dos scripts
-scripts = ["Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py"]
+scripts = ["ip.py", "Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py", "ajuda.py"]
 
 # Caminho para a pasta "test"
 pasta_test = "test"
 
-# Verifica se a pasta "test" existe
-if os.path.exists(pasta_test):
-    # Lista os arquivos na pasta "test"
-    arquivos_test = os.listdir(pasta_test)
-    # Filtra apenas os arquivos que correspondem aos nomes dos módulos
-    modulos_encontrados = [arquivo for arquivo in arquivos_test if arquivo in scripts]
-    if modulos_encontrados:
-        print(f"Módulos encontrados na pasta 'test': {', '.join(modulos_encontrados)}")
-    else:
-        print("Nenhum módulo encontrado na pasta 'test'.")
-else:
-    print("A pasta 'test' não existe.")
+
 
 # Loop para repetir o menu até o usuário sair
 while True:
@@ -51,7 +58,7 @@ while True:
     if opcao.isdigit() and 0 <= int(opcao) <= len(scripts):
         opcao = int(opcao)
         if opcao == 0:
-            print("Programa finalizado")
+            print(Fore.BLUE  + "Programa finalizado")
             break
         else:
             script = scripts[opcao - 1]
