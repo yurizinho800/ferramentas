@@ -26,5 +26,7 @@ https://github.com/yurizinho800/ferramentas
 
 python aprenda.py
 
+![yurizinho800's GitHub stats](https://github-readme-stats.vercel.app/api?username=yurizinho800&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
 -------------- rede social -------------
 https://www.facebook.com/groups/1016028692779981/?ref=share
