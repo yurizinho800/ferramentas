@@ -1,7 +1,7 @@
  # ferramentas com o intuito de ajudar a obter dados de forma rapida e segura !
  ![Screenshot_2024-06-30-16-01-59-148_com termux](https://github.com/yurizinho800/ferramentas/assets/157324630/cf61065e-4c62-4830-aae2-981e7dc5023b)
 
-
+[![Blog](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/CLGnVy6JD4SLU22R47NReq)
 
  ---------------------------------------- **comandos:** 
            
