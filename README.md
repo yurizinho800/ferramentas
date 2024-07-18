@@ -27,3 +27,21 @@ python aprenda.py
 
 -------------- rede social -------------
 https://www.facebook.com/groups/1016028692779981/?ref=share
+
+
+
+
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=yurizinho800&show_icons=true&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=yurizinho800&show_icons=true"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?usernameyurizinho800&show_icons=true" />
+</picture>
+
+
+
