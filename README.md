@@ -23,10 +23,10 @@ https://github.com/yurizinho800/ferramentas
 
  pip install -r requirements.txt 
 
-
 python aprenda.py
 
-![ferramentas GitHub stats](https://github-readme-stats.vercel.app/api?username=yurizinho800&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
+![ferramentas GitHub stats](https://github-readme-stats.vercel.app/api?username=yurizinho800&show_icons=true&theme=radical)
 
 -------------- rede social -------------
 https://www.facebook.com/groups/1016028692779981/?ref=share
