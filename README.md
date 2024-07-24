@@ -3,30 +3,28 @@
 
 [![Blog](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/CLGnVy6JD4SLU22R47NReq)
 [![Blog](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/groups/1016028692779981/?ref=share)
- ---------------------------------------- **comandos:** 
-           
+ --------------------- **comandos:** ------------------------ 
+ 
 
-  apt update
+apt update
 
-  apt upgrade 
+apt upgrade 
 
-  pkg install python
+pkg install python
+
+pkg install git 
 
 
-  pkg install git 
+git clone https://github.com/yurizinho800/ferramentas 
 
+cd ferramentas 
 
- git clone
-https://github.com/yurizinho800/ferramentas 
+pip install -r requirements.txt 
 
- cd ferramentas 
+python iniciar.py
 
- pip install -r requirements.txt 
-
-python aprenda.py
-
--------------- rede social -------------
-https://www.facebook.com/groups/1016028692779981/?ref=share
+ --------------------- **rede social** --------------------------
+   https://www.facebook.com/groups/1016028692779981/?ref=share
 
 
 

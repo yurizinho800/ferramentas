@@ -1,9 +1,8 @@
-import colorama
+from colorama import Fore
 
-print(colorama.Fore.RED + "usar https://" + colorama.Fore.RESET)
+print(Fore.MAGENTA + "**************************************************************")
 
-print(colorama.Fore.MAGENTA + "**************************************************************")
 
-print(colorama.Fore.YELLOW + "site!")
+print(Fore.GREEN + "usar", Fore.RED + "https://", Fore.GREEN + "ou", Fore.RED + "http://")
 
-print(colorama.Fore.GREEN + "usar https:// ou http://")
+print(Fore.MAGENTA + "**************************************************************")

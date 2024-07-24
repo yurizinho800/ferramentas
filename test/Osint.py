@@ -1,13 +1,14 @@
 
 from colorama import Fore,Back,Style
-print(Fore.LIGHTRED_EX + "coloque o https://...")
+print(Fore.LIGHTWHITE_EX + "coloque o https://...")
 from extras import *
 import extras.exemplo
 import extras.novo
 import extras.modulo
 
-print(Fore.BLUE + ")")
-print("|    ATENÇÃO        |        ^")
+print(Fore.BLUE +
+      ".___________________.")
+print(f"|{Fore.YELLOW} ATENÇÃO{Fore.BLUE}           |        ^")
 print("|                   |        |")
 print("|resultado acima    |        |")
 print("|                   |        |")

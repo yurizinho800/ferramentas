@@ -3,7 +3,7 @@ import os
 
 from colorama import Fore, Style
 
-print(" ███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█")
+print("███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█")
 print("████▓▓▓▓╬╬▓█████╬╬╬╬╬╬███▓╬╬╬╬╬╬╬╬╬╬╬╬╬█")
 print("███▓▓▓▓╬╬╬╬╬╬▓██╬╬╬╬╬╬▓▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
 print("████▓▓▓╬╬╬╬╬╬╬▓█▓╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓█")
@@ -41,8 +41,7 @@ def mostrar_menu():
     print(Fore.GREEN + "Escolha um dos scripts abaixo:")
     for i, script in enumerate(scripts):
         print(f"{i + 1} - {script}")
-    print("0 - Sair")
-
+    print(Fore.RED + "0 - Sair" + Fore.RESET)
 # Lista com os nomes dos scripts
 scripts = ["ip.py", "Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py", "ajuda.py"]
 
@@ -58,14 +57,14 @@ while True:
     if opcao.isdigit() and 0 <= int(opcao) <= len(scripts):
         opcao = int(opcao)
         if opcao == 0:
-            print(Fore.BLUE  + "Programa finalizado")
+            print(Fore.YELLOW + "Programa finalizado")
             break
         else:
             script = scripts[opcao - 1]
             print(f"Executando o script {script}")
             executar_script(os.path.join(pasta_test, script))
     else:
-        print("Opção inválida, tente novamente")
+        print(Fore.RED + "Opção inválida, tente novamente")
 
 
 
