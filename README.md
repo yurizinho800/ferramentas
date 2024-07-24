@@ -25,6 +25,7 @@ pip install -r requirements.txt
 python iniciar.py
 
 [![Blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@user-zm3jf2ce8s?si=Qc8E61-imWts3kDD)
+
  --------------------- **rede social** --------------------------
    https://www.facebook.com/groups/1016028692779981/?ref=share
 
