@@ -43,7 +43,7 @@ if __name__ == "__main__":
     tecnologias_encontradas = obter_tecnologias(site_digitado)
 
     if tecnologias_encontradas:
-        print(Fore.GREEN + "Tecnologias encontradas no site:")
+        print(Fore.YELLOW + "Tecnologias encontradas no site:")
         for tecnologia in tecnologias_encontradas:
             print(tecnologia)
     else:
