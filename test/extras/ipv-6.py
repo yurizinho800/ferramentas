@@ -1,6 +1,17 @@
 import socket
 import ipaddress
 import subprocess
+from colorama import init, Fore, Back, Style
+
+logo = (""" 
+╭━━┳━━━┳╮╱╱╭╮╭━━━╮
+╰┫┣┫╭━╮┃╰╮╭╯┃┃╭━━╯
+╱┃┃┃╰━╯┣╮┃┃╭╯┃╰━━╮
+╱┃┃┃╭━━╯┃╰╯┃╱┃╭━╮┃
+╭┫┣┫┃╱╱╱╰╮╭╯╱┃╰━╯┃
+╰━━┻╯╱╱╱╱╰╯╱╱╰━━━╯""")
+
+print(Fore.RED + logo + Fore.RESET + Back.RESET)
 
 while True:
     opcao = input("Digite 1 para obter o IP, 2 para rastrear ou 3 para sair: ")
@@ -14,12 +25,13 @@ while True:
                 family, _, _, _, address = info
                 if family == socket.AF_INET6:
                     ipv6_address = ipaddress.ip_address(address[0])
-                    print(f"Endereço IPv6 do {url}: {ipv6_address}")
+                    print(Fore.GREEN + f"Endereço IPv6 do {url}: {ipv6_address}")
+                    print(Fore.YELLOW + "para continuar")
                     break
             else:
                 print(f"Não foi possível encontrar um endereço IPv6 para {url}.")
         except (socket.gaierror, ValueError):
-            print(f"Erro ao obter o endereço IPv6 para {url}.")
+            print(Fore.RED + f"Erro ao obter o endereço IPv6 para {url}.")
     elif opcao == "2":
         # Obtendo as informações do IP
         ip = input("Digite o IP que você quer rastrear: ")
@@ -29,8 +41,8 @@ while True:
         except (subprocess.CalledProcessError, FileNotFoundError):
             print(f"Erro ao rastrear o endereço IPv6 {ip}.")
     elif opcao == "3":
-        print("Saindo...")
+        print(Fore.BLUE + "Saindo...")
         break
     else:
-        print("Opção inválida. Digite 1, 2 ou 3.")
+        print(Fore.RED + "Opção inválida. Digite 1, 2 ou 3.")
 

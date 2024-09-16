@@ -1,10 +1,19 @@
 # tech_checker.py
-import colorama
-from colorama import Fore, Back, Style
+from colorama import init, Fore, Back, Style
 
 # Resto do seu código...
+logo = """
+╔════╗───────────╔╗
+║╔╗╔╗║───────────║║
+╚╝║║╚╬══╦══╦═╗╔══╣║╔══╦══╦╦══╦══╗
+──║║─║║═╣╔═╣╔╗╣╔╗║║║╔╗║╔╗╠╣╔╗║══╣
+──║║─║║═╣╚═╣║║║╚╝║╚╣╚╝║╚╝║║╔╗╠══║
+──╚╝─╚══╩══╩╝╚╩══╩═╩══╩═╗╠╩╝╚╩══╝
+──────────────────────╔═╝║
+──────────────────────╚══╝ """
+print(Fore.RED + logo + Fore.RESET + Back.RESET)
 
-print(colorama.Fore.MAGENTA + "-----------------------------𝖋𝖚𝖓𝖉𝖆𝖒𝖊𝖓𝖙𝖔---------------------------")
+print(Fore.MAGENTA + "------------------------𝖋𝖚𝖓𝖉𝖆𝖒𝖊𝖓𝖙𝖔----------------------")
 
 import requests
 from bs4 import BeautifulSoup

@@ -15,7 +15,7 @@ sites = {"Google": "https://www.google.com/search?q=",
 nomes = sorted(sites.keys())
 
 # imprime os nomes dos sites com números para o usuário escolher
-print(colorama.Fore.MAGENTA + "Escolha um dos sites abaixo para pesquisar:\n")
+print(colorama.Fore.BLUE + "Escolha um dos sites abaixo para pesquisar:\n")
 for i, nome in enumerate(nomes, start=1):
     print(f"{i}. {nome}")
 print(colorama.Style.RESET_ALL)
@@ -53,3 +53,8 @@ except (ValueError, IndexError):
     print("Site inválido. Tente novamente.")
 
 
+while True:
+    resposta = input("Digite 'sair' para encerrar o loop: ")
+    if resposta == 'sair':
+        break
+    print("Você digitou:", resposta)

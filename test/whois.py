@@ -1,6 +1,11 @@
 # whois_custom.py
-
+from colorama import init, Fore, Back, Style
 import socket
+logo = """
+█───█ █──█ █▀▀█ ─▀─ █▀▀ 
+█▄█▄█ █▀▀█ █──█ ▀█▀ ▀▀█ 
+─▀─▀─ ▀──▀ ▀▀▀▀ ▀▀▀ ▀▀▀  """
+print(Fore.RED + logo + Fore.RESET + Back.RESET)
 
 def obter_informacoes_whois(dominio):
     """
@@ -33,5 +38,11 @@ if __name__ == "__main__":
     dominio_digitado = input("Digite o domínio para obter informações WHOIS: ")
     informacoes_whois = obter_informacoes_whois(dominio_digitado)
 
-    print("Resposta WHOIS:")
-    print(informacoes_whois)
+    print(Fore.GREEN + "Resposta WHOIS:")
+    print(Fore.BLUE + informacoes_whois)
+
+while True:
+    resposta = input(Fore.YELLOW + "Digite 'sair' para encerrar o loop: ")
+    if resposta == 'sair':
+        break
+    print("Você digitou:", resposta)

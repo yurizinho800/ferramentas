@@ -13,8 +13,10 @@ def executar_script(script):
 
 # Função para mostrar o menu de opções
 def mostrar_menu():
-    print(Fore.GREEN + "Para usar essa função é pressiso usar o python3")
-    print("caso contrario pode usar o ipv-6")
+    print(Fore.YELLOW + "_______________________________________________________________________")
+    print(Fore.YELLOW + "|Para usar o ipv-6_mtrrt.py é nescessario usar o kali linux ou umbunto|" )
+    print(Fore.YELLOW + "-----------------------------------------------------------------------")
+    print(Fore.GREEN + "caso contrario pode usar o ipv-6")
     for i, script in enumerate(scripts):
         line_length = len(script) + 6  # Tamanho do nome do script + espaços e b>
         print(f"┌{'─' * line_length}┐")

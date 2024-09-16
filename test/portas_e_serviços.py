@@ -1,4 +1,15 @@
 import socket
+from colorama import init, Fore, Back, Style
+
+logo = """
+┏━━━┓
+┃┏━┓┃
+┃┗━━┳━━┳━┳┓┏┳┓┏━━┳━━┓
+┗━━┓┃┃━┫┏┫┗┛┣┫┃┏┓┃━━┫
+┃┗━┛┃┃━┫┃┗┓┏┫┃┃┗┛┣━━┃
+┗━━━┻━━┻┛╋┗┛┗┛┗━━┻━━┛
+"""
+print(Fore.YELLOW + logo + Fore.RESET + Back.RESET)
 
 # Lista de serviços e portas
 servicos = {
@@ -28,9 +39,9 @@ def verificar_servico(host):
         sock.settimeout(1)  # Timeout de 1 segundo para a conexão
         try:
             if sock.connect_ex((host, porta)) == 0:
-                print(f"O site {host} está usando {servico} na porta {porta}.")
+                print(Fore.GREEN + f"O site {host} está usando {servico} na porta {porta}.")
             else:
-                print(f"O site {host} não está usando {servico}.")
+                print(Fore.RED + f"O site {host} não está usando {servico}.")
         except socket.gaierror:
             print(f"Não foi possível resolver o host: {host}")
         finally:
@@ -39,3 +50,9 @@ def verificar_servico(host):
 # Entrada do usuário
 host = input("Digite o site que deseja verificar: ")
 verificar_servico(host)
+
+while True:
+    resposta = input(Fore.YELLOW + "Digite 'sair' para encerrar loop: ")
+    if resposta == 'sair':
+        break
+    print("Você digitou:", resposta)

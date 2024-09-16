@@ -80,3 +80,9 @@ def rastrear(p, n): # define a função rastrear
     
 
 rastrear(p, n) 
+
+while True:
+    resposta = input("Digite 'sair' para encerrar o loop: ")
+    if resposta == 'sair':
+        break
+    print("Você digitou:", resposta)

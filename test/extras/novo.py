@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import re # importe a biblioteca re
 
-print(Fore.YELLOW + "-------------------------------------------------------")
+print(Fore.YELLOW + "--------------------------------------------------------")
 
 # Defina a função do módulo de extração de e-mails
 def extracao_emails(urls):

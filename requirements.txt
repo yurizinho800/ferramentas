@@ -2,5 +2,6 @@ phonenumbers
 colorama
 bs4
 requests
-mtraceroute 
+# mtraceroute
 # com o pip3
+
