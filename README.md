@@ -5,7 +5,7 @@
 
 ![IMG_20240915_235010](https://github.com/user-attachments/assets/632a0ed2-e949-40a8-9ff8-08212dad5cf6)
 
- ---------------------------------------- **comandos:** 
+ ----------------- **comandos:** 
            
 
   apt update
