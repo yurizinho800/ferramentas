@@ -13,15 +13,16 @@ def executar_script(script):
 # Função para mostrar o menu de opções
 def mostrar_menu():
     print(Fore.GREEN + "Escolha um dos scripts abaixo:")
-    for i, script in enumerate(scripts):
-        line_length = len(script) + 6  # Tamanho do nome do script + espaços e b>
-        print(f"┌{'─' * line_length}┐")
-        print(f"│ {i + 1} : {script} │")
-        print(f"└{'─' * line_length}┘")
-    print(Fore.RED + "0 - Sair" + Fore.RESET)
+    linha_tamanho = 40  # Tamanho da linha do quadrado
+    print("┌" + "─" * linha_tamanho + "┐")
 
+    for i, script in enumerate(scripts):
+        print(f"│ {i + 1} : {script}*" + " " * (linha_tamanho - len(f"{i + 1} : {script}*")) + "│")
+
+    print(f"│ {0} : Sair" + " " * (linha_tamanho - len(f"{0} : Sair")) + "│")
+    print("└" + "─" * linha_tamanho + "┘" + Fore.RESET)
 # Lista com os nomes dos scripts
-scripts = ["ip.py", "Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py", "ajuda.py", "ipv6.py"]
+scripts = ["sql.py", "ip.py", "Osint.py", "whois.py", "fundamento.py",  "número-celular.py", "pesquisa.py", "portas_e_serviços.py", "ajuda.py", "ipv6.py"]
 
 # Caminho para a pasta "test"
 pasta_test = "test"
