@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def adicionar_https(url):
     if not url.startswith('http'):
         url = 'https://' + url
@@ -24,8 +25,16 @@ def extrair_links(url):
         return []
 
 # Exemplo de uso
-url = input("Digite a URL do site: ")
+url = input("Digite o site: ")
 links = extrair_links(url)
 print("Links encontrados:")
 for link in links:
     print(link)
+
+
+
+
+
+
+
+

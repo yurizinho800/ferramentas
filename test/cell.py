@@ -1,14 +1,15 @@
 from colorama import Fore, init
-init()
-init(strip=False)
-print(Fore.LIGHTMAGENTA_EX +  "_" )       
-print(" _                 _")
-print("| |               | |")
-print("| | ___   ___ __ _| |_  __")
-print("| |/ _ \ / __/ _` | \ \/ /")
-print("| | (_) | (_| (_| | |>  <")
-print("|_|\___/ \___\__,_|_/_/\_\+ ATUALIZADO")
 
+print("┌────  ▄▄▄▄▄▄▄▄   ────┐")
+print("                                                      ")
+print(" | ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄    |")
+print(" ───█─▄▀█──█▀▄─█────|")
+print("───▐▌──────────▐▌ ───|")
+print(" ──█▌▀▄──▄▄──▄▀▐█  ──|")
+print(" ─ ███──▀▀──▀▀──███ ─|")
+print(" ▄████▄──▐▌──▄████▄| ")
+print(" |                                                   |  ")
+print("└─────────────────────")
 
 import phonenumbers
 

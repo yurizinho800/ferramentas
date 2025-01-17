@@ -2,15 +2,15 @@ from colorama import Fore
 
 def abrir_menu():
     try:
-        print(Fore.WHITE + "Qual desses não consegue usar?")
+        print(Fore.WHITE + "Qual desses, não consegue usar ?")
         opcoes = [
             "ip.py",
             "número-celular",
-            "fundamento",
-            "portas-e-serviços",
-            "Osint",
+            "tecnologia",
+            "protocolo",
+            "info",
             "whois",
-            "pesquisa"
+            "keylogger"
         ]
         for i, opcao in enumerate(opcoes, start=1):
             print(f"{i}. {opcao}")
@@ -26,11 +26,11 @@ def abrir_menu():
         elif selecao == 4:
             print(Fore.BLUE + "Não é necessário incluir http ou https. Exemplo: www.site.com.")
         elif selecao == 5:
-            print(Fore.BLUE + "Você pode usar o Osint para pesquisar informações como e-mails ou sites semelhantes. Ambos precisam de http ou https.")
+            print(Fore.BLUE + "Você pode usar o Osint para pesquisar informações como e-mails ou sites semelhantes.se deseja procurar por links, pode começar pelo ´www....com´.  já o personalizado precisa de http ou https.")
         elif selecao == 6:
             print(Fore.BLUE + "Para usar o whois, insira o domínio. Exemplo: www.site.com.br.")
         elif selecao == 7:
-            print(Fore.BLUE + "Não precisa de http, apenas o domínio.")
+            print(Fore.BLUE + "na proxima atualização.")
         else:
             print(Fore.RED + "Opção inválida. Escolha um número de 1 a 7.")
 
