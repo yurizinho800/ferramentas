@@ -25,7 +25,7 @@ https://github.com/yurizinho800/ferramentas
  pip install -r requirements.txt 
 
 
-python main.py
+python menu.py
 
 -------------- rede social -------------
 https://www.facebook.com/groups/1016028692779981/?ref=share
