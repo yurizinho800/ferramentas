@@ -31,12 +31,12 @@ def executar_script(script):
 def mostrar_menu():
     while True:
         print("┌──────────────────────────────┐")
-        print("│ 1 : sql.py                               6 : pesquisa.py       | ")
-        print("│ 2 : ip.py                                 7 : porta.py              │ ")
-        print("│ 3 : info.py                            8 : tecno.py              │ ")
-        print("│ 4 : ipv6.py                           9 : dados.py             │ ")
-        print("│ 5 : cell.py                             10 : ajuda.py             │ ")
-        print("│ 0 : Sair                                                                           │  ")
+        print("│ 1 : sql.py   6 : pesquisa.py | ")
+        print("│ 2 : ip.py    7 : porta.py    │ ")
+        print("│ 3 : info.py  8 : tecno.py    │ ")
+        print("│ 4 : ipv6.py  9 : dados.py    │ ")
+        print("│ 5 : cell.py  10 : ajuda.py   │ ")
+        print("│ 0 : Sair                     │  ")
         print("└──────────────────────────────┘")
         print(Fore.GREEN + "Escolha um dos scripts a cima:")
         linha_tamanho = 0  # Tamanho da linha do quadrado
