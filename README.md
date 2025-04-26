@@ -35,3 +35,9 @@ python main.py
 
 -------------- rede social -------------
 https://www.facebook.com/groups/1016028692779981/?ref=share
+
+
+
+
+---------------OBS-----------------------
+recomendo instalar os requerimentos um por vez com o pip
