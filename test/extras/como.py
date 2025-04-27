@@ -10,7 +10,7 @@ def abrir_menu():
             "protocolo",
             "info",
             "whois",
-            "keylogger"
+            "colaboradoes"
         ]
         for i, opcao in enumerate(opcoes, start=1):
             print(f"{i}. {opcao}")
@@ -30,7 +30,7 @@ def abrir_menu():
         elif selecao == 6:
             print(Fore.BLUE + "Para usar o whois, insira o domínio. Exemplo: www.site.com.br.")
         elif selecao == 7:
-            print(Fore.BLUE + "na proxima atualização.")
+            print(Fore.BLUE + "participem do meu grupo do facebook")
         else:
             print(Fore.RED + "Opção inválida. Escolha um número de 1 a 7.")
 

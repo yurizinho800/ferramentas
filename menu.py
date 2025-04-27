@@ -30,39 +30,16 @@ def executar_script(script):
 # Função para mostrar o menu de opções
 def mostrar_menu():
     while True:
-        print("┌──────────────────────────────┐")
-        print("│ 1 : sql.py   6 : pesquisa.py | ")
-        print("│ 2 : ip.py    7 : porta.py    │ ")
-        print("│ 3 : info.py  8 : tecno.py    │ ")
-        print("│ 4 : ipv6.py  9 : dados.py    │ ")
-        print("│ 5 : cell.py  10 : ajuda.py   │ ")
-        print("│ 0 : Sair                     │  ")
-        print("└──────────────────────────────┘")
-        print(Fore.GREEN + "Escolha um dos scripts a cima:")
-        linha_tamanho = 0  # Tamanho da linha do quadrado
 
-        # Exibir os primeiros 5 scripts na primeira coluna
-        for i in range(5):
-            numero = Fore.GREEN + str(i + 1)  # Número em verde
-            nome_script = Fore.BLUE + scripts[i]  # Script em azul
-            conteudo = f"{numero} : {nome_script}"
-            espacos_faltantes = linha_tamanho - len(conteudo) - 1
-            linha = f" {conteudo}" + " " * espacos_faltantes
-            # Verificar se há scripts restantes para a segunda coluna
-            if i + 5 < len(scripts):
-                numero2 = Fore.GREEN + str(i + 6)
-                nome_script2 = Fore.BLUE + scripts[i + 5]
-                conteudo2 = f"{numero2} : {nome_script2}"
-                espacos_faltantes2 = linha_tamanho - len(conteudo2) - 1
-                linha2 = f" {conteudo2}" + " " * espacos_faltantes2
-                print(Back.BLACK + Fore.RED  + Back.BLACK + Fore.RED )
-            else:
-                print(Back.BLACK + Fore.RED + linha)
-
-        saida = Fore.GREEN + "0"
-        linha_saida = f"{saida} : Sair"  * (linha_tamanho - len(f"0 : Sair"))
-        print(Back.BLACK + Fore.RED + linha_saida)
-
+        print(Fore.CYAN + "┌──────────────────────────────┐")
+        print(Fore.YELLOW + "│ 1 : sql.py   6 : pesquisa.py | ")
+        print(Fore.YELLOW + "│ 2 : ip.py    7 : porta.py    │ ")
+        print(Fore.YELLOW + "│ 3 : info.py  8 : tecno.py    │ ")
+        print(Fore.YELLOW + "│ 4 : ipv6.py  9 : dados.py    │ ")
+        print(Fore.YELLOW + "│ 5 : cell.py  10 : ajuda.py   │ ")
+        print(Fore.RED + "│ 0 : Sair                     │")
+        print(Fore.CYAN + "└──────────────────────────────┘")
+        print(Fore.GREEN + "Escolha um dos scripts acima:")
 
         # Solicitar a entrada do usuário
         escolha = input(Style.RESET_ALL + "Digite o número do script que deseja executar: ")
