@@ -1,5 +1,5 @@
  # ferramentas com o intuito de ajudar a obter dados de forma rapida e segura !
-
+<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/9b4b1f0b-b2a7-4afa-af8d-5b95789f8ac2" />
 ![Screenshot_2024-10-28-14-41-20-781_com termux](https://github.com/user-attachments/assets/e864b757-f984-49a9-8431-97e23f2e999c)
 
 
