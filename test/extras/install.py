@@ -12,3 +12,16 @@ def install_mtraceroute():
 
 if __name__ == "__main__":
     install_mtraceroute()
+
+
+import subprocess
+
+def install_mtraceroute():
+    try:
+        subprocess.run(["pip", "install", "mtraceroute"], check=True)
+        print("O mtraceroute foi instalado com sucesso!")
+    except subprocess.CalledProcessError:
+        print("Erro ao instalar o mtraceroute. Verifique se o pip está configurado corretamente.")
+
+if __name__ == "__main__":
+    install_mtraceroute()

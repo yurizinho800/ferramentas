@@ -1,60 +1,63 @@
-
-# importa as bibliotecas
 import requests
 from bs4 import BeautifulSoup
-import colorama # importa a biblioteca colorama
+import colorama
 
-# cria um dicionário com os nomes e as URLs dos sites que você quer buscar
-sites = {"Google": "https://www.google.com/search?q=",
-         "Gmail": "https://www.gmail.com/search?q=",
-         "Instagram": "https://www.instagram.com/search?q=",
-         "Facebook": "https://www.facebook.com/search?=q",
-         "Ichi.pro": "https://ichi.pro/pt/search?q="}
+# Inicializa o colorama para usar cores no terminal
+colorama.init(autoreset=True)
 
-# cria uma lista com os nomes dos sites em ordem alfabética
+# Dicionário com os sites que permitem scraping
+sites = {
+    "Ichi.pro": "https://ichi.pro/pt/search?q="
+}
+
+# Lista com os nomes dos sites em ordem alfabética
 nomes = sorted(sites.keys())
 
-# imprime os nomes dos sites com números para o usuário escolher
+# Exibe os sites disponíveis para o usuário escolher
 print(colorama.Fore.BLUE + "Escolha um dos sites abaixo para pesquisar:\n")
 for i, nome in enumerate(nomes, start=1):
     print(f"{i}. {nome}")
 print(colorama.Style.RESET_ALL)
 
-# pergunta ao usuário qual site e qual termo de pesquisa ele quer usar
+# Recebe a escolha do usuário
 site = input("Digite o número do site que você quer pesquisar: \n")
 termo = input("Digite o termo que você quer pesquisar: \n")
 
-# verifica se o site escolhido é válido
 try:
-    # converte o número do site em um índice da lista de nomes
+    # Converte a escolha em índice e obtém o nome e URL
     indice = int(site) - 1
-    # obtém o nome do site correspondente ao índice
     nome = nomes[indice]
-    # obtém a URL do site correspondente ao nome
     url = sites[nome]
-    # faz a requisição para a URL
-    response = requests.get(url + termo)
-    # cria a variável soup usando o objeto BeautifulSoup
+
+    # Define cabeçalho para simular navegador
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
+
+    # Faz a requisição HTTP
+    response = requests.get(url + termo, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
-    # extrai os dados que quiser do site, como o título, o snippet, a url, etc.
-    # usa um seletor CSS mais genérico para encontrar os elementos que contêm os títulos dos artigos
-    titles = soup.select("h1, h2, h3, h4, h5, h6")
-    # cria uma variável para numerar os resultados
+
+    # Seleciona títulos de artigos
+    titulos = soup.select("h2, h3")
     count = 1
-    # faz um loop sobre os títulos encontrados
-    for title in titles:
-        text = title.string
-        # imprime o número e o texto do resultado com a margem verde
-        print(colorama.Back.GREEN + str(count) + ". " + text + colorama.Style.RESET_ALL)
-        # incrementa o contador
-        count += 1
+
+    # Exibe os títulos encontrados
+    for titulo in titulos:
+        texto = titulo.get_text(strip=True)
+        if texto:
+            print(colorama.Back.GREEN + f"{count}. {texto}" + colorama.Style.RESET_ALL)
+            count += 1
+
+    if count == 1:
+        print("Nenhum resultado relevante encontrado.")
+
 except (ValueError, IndexError):
-    # imprime uma mensagem de erro se o site não for válido
     print("Site inválido. Tente novamente.")
 
-
+# Loop para encerrar o programa
 while True:
     resposta = input("Digite 'sair' para encerrar o loop: ")
-    if resposta == 'sair':
+    if resposta.lower() == 'sair':
         break
     print("Você digitou:", resposta)
