@@ -1,6 +1,6 @@
 from ddgs import DDGS
 
-termo = input("digite o que quer pesquisar:")
+termo = input("digite o que quer pesquisar: ")
 with DDGS() as ddgs:
     resultados = ddgs.text(termo,max_results=5)
  
