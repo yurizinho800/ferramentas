@@ -4,4 +4,4 @@ bs4
 requests
 # mtraceroute
 # com o pip3
-duckduckgo-search
+ddgs
