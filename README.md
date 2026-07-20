@@ -45,3 +45,5 @@ https://www.facebook.com/groups/1016028692779981/?ref=share
 
 ---------------OBS-----------------------
 recomendo instalar os requerimentos um por vez com o pip
+
+https://www.facebook.com/share/v/1JY3QPTxBb/
