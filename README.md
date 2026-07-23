@@ -34,7 +34,11 @@ python main.py
 ![Bash](https://img.shields.io/badge/Bash-Scripts-black?logo=gnu-bash)
 ![Linux](https://img.shields.io/badge/Linux-Terminal-orange?logo=linux)
 
+está com dificuldade, assista o video da instalação
 
+https://youtu.be/-2NUBLUAEQ4
+
+![YouTube](https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white)
 
 
 
