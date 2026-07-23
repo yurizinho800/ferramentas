@@ -29,11 +29,6 @@ https://github.com/yurizinho800/ferramentas
 
 python main.py
 
--------------- rede social -------------
-
-![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)
-
-https://www.facebook.com/groups/1016028692779981/?ref=share
 
 ![Python](https://img.shields.io/badge/Python-green?logo=python)
 ![Bash](https://img.shields.io/badge/Bash-Scripts-black?logo=gnu-bash)
