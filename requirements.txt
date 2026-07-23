@@ -2,6 +2,6 @@ phonenumbers
 colorama
 bs4
 requests
-#'mtraceroute' instalar com o pip3
 ddgs
 # a biblioteca 'ddgs' por enquanto só vai ser usada no linux
+#'mtraceroute'se instala com o pip3
