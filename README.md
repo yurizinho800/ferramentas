@@ -6,7 +6,7 @@
 
 ![Screenshot_2024-09-15-23-54-39-069_com termux](https://github.com/user-attachments/assets/4d5a2450-da22-4892-939e-3270af0617be)
 
- ----------------- **comandos:** 
+ ----------------- **comandos:** ----------------
            
 
   apt update
