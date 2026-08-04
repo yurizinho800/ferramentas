@@ -24,7 +24,7 @@ def abrir_menu():
         elif selecao == 5:
             print(Fore.BLUE + "Primeiro, insira o prefixo (por exemplo: +55), depois o número.")
         elif selecao == 8:
-            print(Fore.YELLOW + "Coloque o domínio do site com http ou https.")
+            print(Fore.BLUE + "Coloque o domínio do site com http ou https.")
         elif selecao == 4:
             print(Fore.BLUE + "ainda em desenvolvimento.")
         elif selecao == 3:
