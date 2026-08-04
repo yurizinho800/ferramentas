@@ -4,4 +4,4 @@ bs4
 requests
 ddgs
 # a biblioteca 'ddgs' por enquanto só vai ser usada no linux
-#'mtraceroute'se instala com o pip3
+# o 'mtraceroute'se instala com o pip3.
