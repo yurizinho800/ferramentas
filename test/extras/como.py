@@ -26,13 +26,13 @@ def abrir_menu():
         elif selecao == 8:
             print(Fore.BLUE + "Coloque o domínio do site com http ou https.")
         elif selecao == 4:
-            print(Fore.BLUE + "ainda em desenvolvimento.")
+            print(Fore.RED + "ainda em desenvolvimento.")
         elif selecao == 3:
             print(Fore.BLUE + "Você pode usar o Osint para pesquisar informações como e-mails ou sites semelhantes.se deseja procurar por links, pode começar pelo ´www....com´.  já o personalizado precisa de http ou https.")
         elif selecao == 7:
             print(Fore.BLUE + "não precisa usar protocolos, apenas o domínio")
         elif selecao == 6:
-            print(Fore.BLUE + "por enquanto essa opção só pode ser usada no linux.")
+            print(Fore.YELLOW + "por enquanto essa opção só pode ser usada no linux.")
         elif selecao == 9:
             print(Fore.BLUE + "Para usar o whois, insira o domínio. Exemplo: www.site.com.br.")
         elif selecao == 1:
