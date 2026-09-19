@@ -1,5 +1,5 @@
  # ferramentas com o intuito de ajudar a obter dados de forma rapida e segura !
-<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/9b4b1f0b-b2a7-4afa-af8d-5b95789f8ac2" />
+
 
 
 
