@@ -27,7 +27,7 @@ https://github.com/yurizinho800/ferramentas
  pip install -r requirements.txt 
 
 
-python main.py
+python menu.py
 
 
 ![Python](https://img.shields.io/badge/Python-green?logo=python)
